@@ -1,1 +1,13 @@
+name: Access ID Workflow
+
+on:
+  push:
+
+jobs:
+  display-access-id:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Access ID Message
+        run: echo "The ACCESS_ID is \"${{ vars.ACCESS_ID }}\""
 
